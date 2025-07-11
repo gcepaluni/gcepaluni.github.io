@@ -16,7 +16,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
-  <!-- Custom styles for blue stripe and adjustments -->
+
   <style>
     /* Blue stripe on the right */
     body::after {
@@ -24,63 +24,67 @@
       position: fixed;
       top: 0;
       right: 0;
-      width: 6vw;
-      min-width: 28px;
+      width: 8vw;
+      min-width: 44px;
+      max-width: 70px;
       height: 100vh;
       background: #0056b3;
       z-index: 0;
+      pointer-events: none;
     }
-
-    /* On small screens, make the stripe a bit thinner */
-    @media (max-width: 576px) {
+    @media (max-width: 767.98px) {
       body::after {
-        width: 18px;
-        min-width: 10px;
+        width: 24px;
+        min-width: 14px;
+        max-width: 30px;
       }
     }
 
-    /* Adjust main content to not overlap with stripe */
+    /* Ensure main content overlays stripe */
     .container-fluid {
       position: relative;
       z-index: 1;
     }
 
-    /* Smaller name for better fit on mobile */
+    /* Responsive headline */
     h1.mb-0 {
-      font-size: 2.2rem; /* default */
+      font-size: 2.4rem;
+      font-weight: 700;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       h1.mb-0 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
       }
     }
-    @media (max-width: 576px) {
+    @media (max-width: 767.98px) {
       h1.mb-0 {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
       }
     }
 
-    /* Increase profile photo size */
+    /* Larger and responsive profile photo */
     .navbar-brand img {
-      width: 170px;
-      height: 170px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       border-radius: 50%;
-      margin: 0 auto;
+      margin: 0 auto 16px auto;
       display: block;
       box-shadow: 0 4px 24px rgba(0,0,0,0.14);
-      border: 5px solid #fff;
+      border: 6px solid #fff;
+      background: #e9ecef;
+      transition: width 0.2s, height 0.2s;
     }
-    @media (max-width: 991px) {
+    @media (max-width: 992px) {
       .navbar-brand img {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
       }
     }
-    @media (max-width: 576px) {
+    @media (max-width: 767.98px) {
       .navbar-brand img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
       }
     }
   </style>
@@ -92,7 +96,6 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none small">Gabriel Cepaluni</span>
       <span class="d-none d-lg-block">
-        <!-- Foto maior já adaptada no CSS -->
         <img class="img-fluid" src="img/profile.jpg" alt="Gabriel Cepaluni profile photo">
       </span>
     </a>
@@ -109,11 +112,64 @@
       </ul>
     </div>
   </nav>
-
+  
   <div class="container-fluid p-0">
 
-    <!-- ...restante do conteúdo igual ao seu... -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Gabriel Cepaluni
+          <span class="text-primary"></span>
+        </h1>
+        <div class="subheading mb-5">Political Scientist · <a href="mailto:gabriel.cepaluni@unesp.br">gabriel.cepaluni@unesp.br</a></div>
+        <p class="lead mb-5">
+          I am an Associate Professor in the <a href="https://www.franca.unesp.br/" target="_blank">School of Humanities and Social Sciences</a> at <a href="https://www2.unesp.br/" target="_blank">São Paulo State University (UNESP)</a>. I hold a Ph.D. in <a href="https://dcp.fflch.usp.br/" target="_blank">Political Science</a> from the University of São Paulo, and a Master's degree in International Relations from the <a href="https://www.santiagodantas-ppgri.org/" target="_blank">San Tiago Dantas Program (UNESP, UNICAMP and PUC-SP)</a>. I obtained my <i>Habilitation</i> (or <i>Livre-Docência</i>) at the <a href="http://www.iri.usp.br/" target="_blank">International Relations Institute</a> at the University of São Paulo. The defense of the Habilitation thesis, which includes oral and written exams, is a requirement to become an Associate or Full Professor in many Brazilian and European universities.<br><br>
+          My research is in comparative political economy, with a substantive focus on developing countries. I have employed experimental and quasi-experimental methods with large or novel databases to answer relevant empirical questions related to racial bias and income inequality in political representation, social programs and child labor, and the size of legislatures and welfare. I have also conducted comparative studies on international trade and public health. I started my research career as a qualitative researcher, focusing on Brazilian foreign policy. My research has appeared or is forthcoming in leading social science journals, such as <i>American Journal of Political Science</i> (2x), <i>Political Analysis</i>, <i>World Development</i> (2x), and <i>International Political Science Review</i>, among others.<br><br>
+          See my <a href="#research">research</a> below, visit my <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=IK5ZJBcAAAAJ" target="_blank">Google Scholar profile</a>, or find my full CV <a href="#cv">here</a>.
+        </p>
+        <div class="social-icons">
+          <a href="mailto:gabriel.cepaluni@unesp.br" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com.br/citations?user=IK5ZJBcAAAAJ&hl=pt-BR&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+    </section>
 
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="cv">
+      <div class="w-100">
+        <h2 class="mb-5">CV</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <p>If your browser does not support PDFs, please download my CV <a href="http://gcepaluni.github.io/GabrielCepaluniCV.pdf" target="_blank">here</a>.</p>
+            <iframe src="https://docs.google.com/viewer?embedded=true&url=http://gcepaluni.github.io/GabrielCepaluniCV.pdf" style="width: 800px; height: 700px; border: none;"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
+      <div class="w-100">
+        <h2 class="mb-5">Research</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-1">Publications</h3>
+            <!-- Your publications here (unchanged) -->
+          </div>
+        </div>
+        <!-- Other sections here (unchanged) -->
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="teaching">
+      <div class="w-100">
+        <h2 class="mb-5">Teaching</h2>
+        <!-- Your courses here (unchanged) -->
+      </div>
+    </section>
   </div>
 
   <!-- Bootstrap core JavaScript -->
