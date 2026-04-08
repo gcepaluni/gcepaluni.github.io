@@ -28,28 +28,29 @@
       z-index: 0;
       pointer-events: none;
     }
-    @media (max-width: 767.98px) {
-      body::after {
-        width: 24px;
-      }
-    }
+
     .container-fluid { position: relative; z-index: 1; }
 
     h1.mb-0 { font-size: 2.4rem; font-weight: 700; }
-    @media (max-width: 992px) { h1.mb-0 { font-size: 1.8rem; } }
-    @media (max-width: 767.98px) { h1.mb-0 { font-size: 1.25rem; } }
 
     .navbar-brand img {
-      width: 200px; height: 200px; object-fit: cover;
-      border-radius: 50%; margin: 0 auto 16px auto; display: block;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 16px auto;
+      display: block;
       box-shadow: 0 4px 24px rgba(0,0,0,0.14);
-      border: 6px solid #fff; background: #e9ecef;
+      border: 6px solid #fff;
+      background: #e9ecef;
     }
-    @media (max-width: 992px) {
-      .navbar-brand img { width: 140px; height: 140px; }
+
+    /* FIX spacing */
+    #research .resume-item:last-child {
+      margin-bottom: 0.5rem !important;
     }
-    @media (max-width: 767.98px) {
-      .navbar-brand img { width: 100px; height: 100px; }
+    #teaching {
+      padding-top: 2rem !important;
     }
   </style>
 </head>
@@ -58,44 +59,125 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
-    <span class="d-block d-lg-none small">Gabriel Cepaluni</span>
     <span class="d-none d-lg-block">
       <img class="img-fluid" src="img/profile.jpg" alt="Gabriel Cepaluni">
     </span>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cv">CV</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
-    </ul>
-  </div>
 </nav>
 
 <div class="container-fluid p-0">
 
-<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+<section id="about" class="resume-section p-3 p-lg-5">
 <div class="w-100">
-<h1 class="mb-0">
-  Gabriel Cepaluni
-</h1>
+
+<h1 class="mb-0">Gabriel Cepaluni</h1>
 
 <div class="subheading mb-5">
-Political Scientist · <a href="mailto:gabriel.cepaluni@unesp.br">gabriel.cepaluni@unesp.br</a>
+Political Scientist · 
+<a href="mailto:gabriel.cepaluni@unesp.br">gabriel.cepaluni@unesp.br</a>
 </div>
 
 <p class="lead mb-5">
-I am an Associate Professor at UNESP. My research has appeared in leading journals such as <i>American Journal of Political Science</i>, <i>Political Analysis</i>, <i>World Development</i>, <i>European Journal of Political Economy</i>, and <i>Nature</i>.
+I am an Associate Professor in the <a href="https://www.franca.unesp.br/" target="_blank" rel="noopener noreferrer">School of Humanities and Social Sciences</a> at <a href="https://www2.unesp.br/" target="_blank" rel="noopener noreferrer">São Paulo State University (UNESP)</a>. I hold a Ph.D. in <a href="https://dcp.fflch.usp.br/" target="_blank" rel="noopener noreferrer">Political Science</a> from the University of São Paulo, and a Master's degree in International Relations from the <a href="https://www.santiagodantas-ppgri.org/" target="_blank" rel="noopener noreferrer">San Tiago Dantas Program</a>. I obtained my <i>Habilitation (Livre-Docência)</i> at the <a href="http://www.iri.usp.br/" target="_blank" rel="noopener noreferrer">International Relations Institute</a> at the University of São Paulo.<br><br>
+
+My research lies in comparative political economy, with a substantive focus on developing countries. I study how institutions shape inequality, labor coercion, and state capacity, using experimental and quasi-experimental methods applied to large-scale administrative and novel datasets. My work combines causal inference strategies with data-intensive approaches, including the use of computational methods and text-based data.<br><br>
+
+My research has appeared in leading journals such as <i>American Journal of Political Science</i>, <i>Political Analysis</i>, <i>World Development</i>, <i>European Journal of Political Economy</i>, <i>International Political Science Review</i>, and <i>Nature</i>. I am also the author of <i>Capitalism and Development: Steering Markets Toward Fairness</i> (Cambridge University Press).<br><br>
+
+I have held visiting research positions at the University of Notre Dame and the United Nations University (UNU-WIDER), and have teaching and supervision experience in both Brazil and the United Kingdom.<br><br>
+
+See my <a href="#research">research</a> below, visit my <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=IK5ZJBcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>, or find my full CV <a href="#cv">here</a>.
 </p>
 
-<div class="social-icons">
-<a href="mailto:gabriel.cepaluni@unesp.br"><i class="fas fa-envelope"></i></a>
-<a href="https://scholar.google.com.br/citations?user=IK5ZJBcAAAAJ&hl=pt-BR" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i></a>
+</div>
+</section>
+
+<hr class="m-0">
+
+<section id="research" class="resume-section p-3 p-lg-5">
+<div class="w-100">
+
+<h2>Research</h2>
+
+<h3>Publications</h3>
+
+<p>2026. Cepaluni, Gabriel, and Jamil Civitarese. 
+<a href="https://doi.org/10.1016/j.worlddev.2026.107416" target="_blank" rel="noopener noreferrer">
+Gun Violence and the Political Economy of Forced Labor Investigations in Brazil
+</a>. <i>World Development</i>.
+</p>
+
+<p>2026. Cepaluni, Gabriel, Jamil Civitarese, and Michael T. Dorsch. 
+<a href="https://doi.org/10.1016/j.ejpoleco.2026.102807" target="_blank" rel="noopener noreferrer">
+Land Invasions and Contemporary Slavery
+</a>. <i>European Journal of Political Economy</i>.
+</p>
+
+<p>2026. Aczel et al. 
+<a href="https://doi.org/10.1038/s41586-025-09844-9" target="_blank" rel="noopener noreferrer">
+Investigating the Analytical Robustness of the Social and Behavioural Sciences
+</a>. <i>Nature</i>.
+</p>
+
+<p>2025. Cepaluni, Gabriel and Driscoll, Amanda. 
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X2400322X" target="_blank" rel="noopener noreferrer">
+Do Conditional Cash Transfers Improve Intergenerational Gains in Educational Achievement?
+</a>. <i>World Development</i>.
+</p>
+
+<p>2025. Mignozzetti, Umberto, Cepaluni, Gabriel, and Freire, Danilo. 
+<a href="https://onlinelibrary.wiley.com/doi/10.1111/ajps.12843" target="_blank" rel="noopener noreferrer">
+Legislature Size and Welfare: Evidence from Brazil
+</a>. <i>American Journal of Political Science</i>.
+</p>
+
+<div class="resume-item">
+
+<h3 class="mb-1">Working Papers</h3>
+<p>
+Cepaluni, Gabriel, and Pedro Accorsi.
+"The Factor Endowments of Rebellion: Demography, Labor Supply, and the Internal Organization of Civil War."
+Working paper, 2026.
+</p>
+
+<h3 class="mb-1">Book</h3>
+<p>
+2010. Vigevani, Tullo, and Cepaluni, Gabriel.
+<a href="https://www.google.com.br/books/edition/Brazilian_Foreign_Policy_in_Changing_Tim/A2AmOQpQPYcC"
+target="_blank" rel="noopener noreferrer">
+Brazilian Foreign Policy in Changing Times: The Quest for Autonomy from Sarney to Lula
+</a>.
+MD: Lexington Books. (Foreword by Philippe C. Schmitter).
+Portuguese edition: Editora da Unesp, 2012; 2nd edition, 2016.
+Chinese edition: Social Sciences Academic Press, 2015.
+</p>
+
+<h3 class="mb-1">Book Chapters</h3>
+
+<p>
+2024. Cepaluni, Gabriel, Dorsch, Michael T., and Dzebo, Semir.
+<a href="https://doi.org/10.4324/9781003489993"
+target="_blank" rel="noopener noreferrer">
+Populism, Political Regimes, and COVID-19 Deaths
+</a>.
+</p>
+
+<p>
+2019. Cepaluni, Gabriel et al.
+<a href="https://link.springer.com/chapter/10.1007/978-3-319-99552-6_4"
+target="_blank" rel="noopener noreferrer">
+Preserving Domestic Autonomy
+</a>.
+</p>
+
+<p>
+2013. Vigevani, Tullo, and Cepaluni, Gabriel.
+<a href="https://tinyurl.com/4k8c5d2m"
+target="_blank" rel="noopener noreferrer">
+Brazil: Global Power-To-Be?
+</a>.
+</p>
+
 </div>
 
 </div>
@@ -103,38 +185,20 @@ I am an Associate Professor at UNESP. My research has appeared in leading journa
 
 <hr class="m-0">
 
-<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
+<section id="teaching" class="resume-section p-3 p-lg-5">
 <div class="w-100">
 
-<h2 class="mb-5">Research</h2>
+<h2>Teaching</h2>
 
-<h3 class="mb-1">Publications</h3>
-
-<p>2026. Cepaluni and Civitarese. <a href="https://doi.org/10.1016/j.worlddev.2026.107416" target="_blank" rel="noopener noreferrer">Gun Violence and the Political Economy of Forced Labor Investigations in Brazil</a>.</p>
-
-<p>2026. Cepaluni, Civitarese and Dorsch. <a href="https://doi.org/10.1016/j.ejpoleco.2026.102807" target="_blank" rel="noopener noreferrer">Land Invasions and Contemporary Slavery</a>.</p>
-
-<p>2026. Aczel et al. <a href="https://doi.org/10.1038/s41586-025-09844-9" target="_blank" rel="noopener noreferrer">Analytical Robustness</a>.</p>
-
-<hr>
-
-<div class="resume-item mb-5">
-<div class="resume-content">
-
-<h3 class="mb-1">Working Papers</h3>
-<p>Cepaluni and Accorsi. "The Factor Endowments of Rebellion." Working paper, 2026.</p>
-
-<h3 class="mb-1">Book</h3>
-<p>2010. Vigevani and Cepaluni. <a href="https://www.google.com.br/books/edition/Brazilian_Foreign_Policy_in_Changing_Tim/A2AmOQpQPYcC" target="_blank" rel="noopener noreferrer">Brazilian Foreign Policy</a>.</p>
-
-<h3 class="mb-1">Book Chapters</h3>
-
-<p>2024. <a href="https://doi.org/10.4324/9781003489993" target="_blank" rel="noopener noreferrer">Populism and COVID</a>.</p>
-<p>2019. <a href="https://link.springer.com/chapter/10.1007/978-3-319-99552-6_4" target="_blank" rel="noopener noreferrer">Mercosur Strategy</a>.</p>
-<p>2013. <a href="https://tinyurl.com/4k8c5d2m" target="_blank" rel="noopener noreferrer">Brazil: Global Power</a>.</p>
-
-</div>
-</div>
+<p>Politics and Public Policy (Graduate).</p>
+<p>Experimental Approach to Public Policy Evaluation (Graduate).</p>
+<p>Research Design (Undergraduate and Graduate).</p>
+<p>Analysing the Policy Process (Undergraduate).</p>
+<p>Foreign Policy and Regional Integration (Undergraduate).</p>
+<p>International Trade (Undergraduate).</p>
+<p>Introduction to International Affairs (Undergraduate).</p>
+<p>International Negotiations (Undergraduate).</p>
+<p>Foreign Policy in Comparative Perspective (Undergraduate).</p>
 
 </div>
 </section>
