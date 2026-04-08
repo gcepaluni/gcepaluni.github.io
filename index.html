@@ -8,17 +8,13 @@
   <meta name="author" content="">
   <title>Gabriel Cepaluni</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Goblin+One:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
   <style>
-    /* Blue stripe on the right */
     body::after {
       content: "";
       position: fixed;
@@ -35,191 +31,119 @@
     @media (max-width: 767.98px) {
       body::after {
         width: 24px;
-        min-width: 14px;
-        max-width: 30px;
       }
     }
+    .container-fluid { position: relative; z-index: 1; }
 
-    /* Ensure main content overlays stripe */
-    .container-fluid {
-      position: relative;
-      z-index: 1;
-    }
+    h1.mb-0 { font-size: 2.4rem; font-weight: 700; }
+    @media (max-width: 992px) { h1.mb-0 { font-size: 1.8rem; } }
+    @media (max-width: 767.98px) { h1.mb-0 { font-size: 1.25rem; } }
 
-    /* Responsive headline */
-    h1.mb-0 {
-      font-size: 2.4rem;
-      font-weight: 700;
-    }
-    @media (max-width: 992px) {
-      h1.mb-0 {
-        font-size: 1.8rem;
-      }
-    }
-    @media (max-width: 767.98px) {
-      h1.mb-0 {
-        font-size: 1.25rem;
-      }
-    }
-
-    /* Larger and responsive profile photo */
     .navbar-brand img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 0 auto 16px auto;
-      display: block;
+      width: 200px; height: 200px; object-fit: cover;
+      border-radius: 50%; margin: 0 auto 16px auto; display: block;
       box-shadow: 0 4px 24px rgba(0,0,0,0.14);
-      border: 6px solid #fff;
-      background: #e9ecef;
-      transition: width 0.2s, height 0.2s;
+      border: 6px solid #fff; background: #e9ecef;
     }
     @media (max-width: 992px) {
-      .navbar-brand img {
-        width: 140px;
-        height: 140px;
-      }
+      .navbar-brand img { width: 140px; height: 140px; }
     }
     @media (max-width: 767.98px) {
-      .navbar-brand img {
-        width: 100px;
-        height: 100px;
-      }
+      .navbar-brand img { width: 100px; height: 100px; }
     }
   </style>
 </head>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none small">Gabriel Cepaluni</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid" src="img/profile.jpg" alt="Gabriel Cepaluni profile photo">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cv">CV</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <div class="container-fluid p-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none small">Gabriel Cepaluni</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid" src="img/profile.jpg" alt="Gabriel Cepaluni">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Gabriel Cepaluni
-          <span class="text-primary"></span>
-    </h1>
-        <div class="subheading mb-5">Political Scientist · <a href="mailto:gabriel.cepaluni@unesp.br">gabriel.cepaluni@unesp.br</a></div>
-        <p class="lead mb-5">
-          I am an Associate Professor in the <a href="https://www.franca.unesp.br/" target="_blank">School of Humanities and Social Sciences</a> at <a href="https://www2.unesp.br/" target="_blank">São Paulo State University (UNESP)</a>. I hold a Ph.D. in <a href="https://dcp.fflch.usp.br/" target="_blank">Political Science</a> from the University of São Paulo, and a Master's degree in International Relations from the <a href="https://www.santiagodantas-ppgri.org/" target="_blank">San Tiago Dantas Program (UNESP, UNICAMP and PUC-SP)</a>. I obtained my <i>Habilitation</i> (or <i>Livre-Docência</i>) at the <a href="http://www.iri.usp.br/" target="_blank">International Relations Institute</a> at the University of São Paulo. The defense of the Habilitation thesis, which includes oral and written exams, is a requirement to become an Associate or Full Professor in many Brazilian and European universities.<br><br>
-          My research is in comparative political economy, with a substantive focus on developing countries. I use experimental and quasi-experimental methods with large and novel databases to study political representation, social policy, labor coercion, public health, and international political economy. I began my research career as a qualitative scholar of Brazilian foreign policy. My research has appeared in leading social science journals such as <i>American Journal of Political Science</i> (2x), <i>Political Analysis</i>, <i>World Development</i>, <i>European Journal of Political Economy</i>, <i>International Political Science Review</i>, and <i>Nature</i>, among others.<br><br>
-          See my <a href="#research">research</a> below, visit my <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=IK5ZJBcAAAAJ" target="_blank">Google Scholar profile</a>, or find my full CV <a href="#cv">here</a>.
-    </p>
-        <div class="social-icons">
-          <a href="mailto:gabriel.cepaluni@unesp.br" target="_blank"><i class="fas fa-envelope"></i></a>
-          <a href="https://scholar.google.com.br/citations?user=IK5ZJBcAAAAJ&hl=pt-BR&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="cv">
-      <div class="w-100">
-        <h2 class="mb-5">CV</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <p>If your browser does not support PDFs, please download my CV <a href="http://gcepaluni.github.io/GabrielCepaluniCV.pdf" target="_blank">here</a>.</p>
-            <iframe src="https://docs.google.com/viewer?embedded=true&url=http://gcepaluni.github.io/GabrielCepaluniCV.pdf" style="width: 800px; height: 700px; border: none;"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
-      <div class="w-100">
-        <h2 class="mb-5">Research</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3 class="mb-1">Publications</h3>
-            <p>2026. <b>Cepaluni, Gabriel</b>, and Jamil Civitarese. <a href="https://doi.org/10.1016/j.worlddev.2026.107416" target="_blank">Gun Violence and the Political Economy of Forced Labor Investigations in Brazil</a>. <i>World Development</i>, 204, 107416.</p>
-            <p>2026. <b>Cepaluni, Gabriel</b>, Jamil Civitarese, and Michael T. Dorsch. <a href="https://doi.org/10.1016/j.ejpoleco.2026.102807" target="_blank">Land Invasions and Contemporary Slavery</a>. <i>European Journal of Political Economy</i>, 93, 102807.</p>
-            <p>2026. Aczel, B., Szaszi, B., Clelland, H. T., et al. (including <b>Cepaluni, Gabriel</b>). <a href="https://doi.org/10.1038/s41586-025-09844-9" target="_blank">Investigating the Analytical Robustness of the Social and Behavioural Sciences</a>. <i>Nature</i>, 652, 135-142.</p>
-            <p>2025. <b>Cepaluni, Gabriel</b>, and Driscoll, Amanda. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X2400322X" target="_blank">Do Conditional Cash Transfers Improve Intergenerational Gains in Educational Achievement? Evidence from Brazil’s Bolsa Família Program</a>. <i>World Development</i>, 187, 106852.</p>
-            <p>2025. Mignozzetti, Umberto, <b>Cepaluni, Gabriel</b>, and Freire, Danilo. <a href="https://onlinelibrary.wiley.com/doi/10.1111/ajps.12843" target="_blank">Legislature Size and Welfare: Evidence from Brazil</a>. <i>American Journal of Political Science</i>, 69(3), 831-846.</p>
-            <p>2022. <b>Cepaluni, Gabriel</b>, Dorsch, Michael T., and Kovarek, Daniel. <a href="https://www.ssph-journal.org/journals/international-journal-of-public-health" target="_blank">Mobility and Policy Responses During the COVID-19 Pandemic</a>. <i>International Journal of Public Health</i>, 67, 1604663.</p>
-            <p>2022. <b>Cepaluni, Gabriel</b>, Chewning, Taylor K., Driscoll, Amanda, and Faganello, Marco A. <a href="https://www.sciencedirect.com/science/article/pii/S0305750X21003831" target="_blank">Conditional Cash Transfers and Child Labor</a>. <i>World Development</i>, 152, 105768.</p>
-            <p>2021. <b>Cepaluni, Gabriel</b>, Dorsch, Michael T., and Branyiczki, Réka. <a href="https://bristoluniversitypressdigital.com/view/journals/jpfpc/37/1/article-p27.xml" target="_blank">Political Regimes and Deaths in the Early Stages of the COVID-19 Pandemic</a>. <i>Journal of Public Finance and Public Choice</i>, 37(1), 27-53.</p>
-            <p>2020. <b>Cepaluni, Gabriel</b>, and Fernandes, I. F. <a href="https://tinyurl.com/yw8px7h9" target="_blank">United We Stand, Divided We Fall: Coalitions in the GATT/WTO Negotiations</a>. <i>International Political Science Review</i>, 43(4), 547-563.</p>
-            <p>2018. Driscoll, Amanda, <b>Cepaluni, Gabriel</b>, Guimarães, Feliciano D. S., and Spada, Paolo. <a href="https://tinyurl.com/4xw2vtct" target="_blank">Prejudice, Strategic Discrimination, and the Electoral Connection: Evidence from a Pair of Field Experiments in Brazil</a>. <i>American Journal of Political Science</i>, 62(4), 781-795.</p>
-            <p>2016. <b>Cepaluni, Gabriel</b>, and Hidalgo, F. Daniel. <a href="https://www.cambridge.org/core/journals/political-analysis/article/abs/compulsory-voting-can-increase-political-inequality-evidence-from-brazil/76BB8B11EA9A3FF75A1B0591C663B303" target="_blank">Compulsory Voting Can Increase Political Inequality: Evidence from Brazil</a>. <i>Political Analysis</i>, 24(2), 273-280.</p>
-            <p>2007. Vigevani, Tullo, and <b>Cepaluni, Gabriel</b>. <a href="https://tinyurl.com/y5wk2js5" target="_blank">Lula's Foreign Policy and the Quest for Autonomy through Diversification</a>. <i>Third World Quarterly</i>, 28(7), 1309-1326. (An expanded version appeared in Portuguese in <i>Contexto Internacional</i>, 2007.)</p>
-        </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-  <div class="resume-content">
-
-    <h3 class="mb-1">Working Papers</h3>
-    <p>Cepaluni, Gabriel, and Pedro Accorsi. "The Factor Endowments of Rebellion: Demography, Labor Supply, and the Internal Organization of Civil War." Working paper, 2026.</p>
-
-    <h3 class="mb-1">Book</h3>
-    <p>2010. Vigevani, Tullo, and Cepaluni, Gabriel. Brazilian Foreign Policy in Changing Times: The Quest for Autonomy from Sarney to Lula. MD: Lexington Books. (Foreword by Philippe C. Schmitter). Portuguese edition: Editora da Unesp, 2012; 2nd edition, 2016. Chinese edition: Social Sciences Academic Press, 2015.</p>
-
-    <h3 class="mb-1">Book Chapters</h3>
-
-    <p>2024. Cepaluni, Gabriel, Dorsch, Michael T., and Dzebo, Semir. Populism, Political Regimes, and COVID-19 Deaths. In The Ideational Approach to Populism, Volume II: Consequences and Mitigation, edited by Angelos Chryssogelos, Eliza Tanner Hawkins, Kirk A. Hawkins, Levente Littvay, and Nina Wiesehomeier. Routledge.</p>
-
-    <p>2019. Cepaluni, Gabriel, Mariano, Karina L. Pasquariello, and Mariano, Marcelo Passini. Preserving Domestic Autonomy: Weak Migration Laws and the Mercosur Strategy of Limited Integration. In César Álvarez Alonso and José Ignacio Hernández (eds.), Latin American Geopolitics. London: Palgrave Macmillan, 83-107.</p>
-
-    <p>2013. Vigevani, Tullo, and Cepaluni, Gabriel. Brazil: Global Power-To-Be? In Ryan K. Beasley, Juliet Kaarbo, Jeffrey S. Lantis, and Michael T. Snarr (eds.), Foreign Policy in Comparative Perspective: Domestic and International Influences on State Behavior. Washington, DC: CQ Press, 265-290.</p>
-
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cv">CV</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
+    </ul>
   </div>
+</nav>
+
+<div class="container-fluid p-0">
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+<div class="w-100">
+<h1 class="mb-0">
+  Gabriel Cepaluni
+</h1>
+
+<div class="subheading mb-5">
+Political Scientist · <a href="mailto:gabriel.cepaluni@unesp.br">gabriel.cepaluni@unesp.br</a>
 </div>
-    </section>
 
-    <hr class="m-0">
+<p class="lead mb-5">
+I am an Associate Professor at UNESP. My research has appeared in leading journals such as <i>American Journal of Political Science</i>, <i>Political Analysis</i>, <i>World Development</i>, <i>European Journal of Political Economy</i>, and <i>Nature</i>.
+</p>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="teaching">
-      <div class="w-100">
-        <h2 class="mb-5">Teaching</h2>
-        <h3>Courses Taught</h3>
-        <p>Politics and Public Policy (Graduate).</p>
-        <p>Experimental Approach to Public Policy Evaluation (Graduate).</p>
-        <p>Research Design (Undergraduate and Graduate).</p>
-        <p>Analysing the Policy Process (Undergraduate).</p>
-        <p>Foreign Policy and Regional Integration (Undergraduate).</p>
-        <p>International Trade (Undergraduate).</p>
-        <p>Introduction to International Affairs (Undergraduate).</p>
-        <p>International Negotiations (Undergraduate).</p>
-        <p>Foreign Policy in Comparative Perspective (Undergraduate).</p>
-        <h3>Courses on Latin American Politics</h3>
-        <p><a href="https://gcepaluni.github.io/Brazil_Syllabus.pdf" target="_blank">Brazilian Politics: Modern Methods and Approaches</a> (Advanced Undergraduate/Graduate).</p>
-        <p><a href="https://gcepaluni.github.io/Coercion_Politics_LA.pdf" target="_blank">The Political Economy of Coercive Relations in Latin America</a> (Advanced Undergraduate/Graduate).</p>
-      </div>
-    </section>
+<div class="social-icons">
+<a href="mailto:gabriel.cepaluni@unesp.br"><i class="fas fa-envelope"></i></a>
+<a href="https://scholar.google.com.br/citations?user=IK5ZJBcAAAAJ&hl=pt-BR" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i></a>
+</div>
 
-  </div>
+</div>
+</section>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+<hr class="m-0">
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
+<div class="w-100">
+
+<h2 class="mb-5">Research</h2>
+
+<h3 class="mb-1">Publications</h3>
+
+<p>2026. Cepaluni and Civitarese. <a href="https://doi.org/10.1016/j.worlddev.2026.107416" target="_blank" rel="noopener noreferrer">Gun Violence and the Political Economy of Forced Labor Investigations in Brazil</a>.</p>
+
+<p>2026. Cepaluni, Civitarese and Dorsch. <a href="https://doi.org/10.1016/j.ejpoleco.2026.102807" target="_blank" rel="noopener noreferrer">Land Invasions and Contemporary Slavery</a>.</p>
+
+<p>2026. Aczel et al. <a href="https://doi.org/10.1038/s41586-025-09844-9" target="_blank" rel="noopener noreferrer">Analytical Robustness</a>.</p>
+
+<hr>
+
+<div class="resume-item mb-5">
+<div class="resume-content">
+
+<h3 class="mb-1">Working Papers</h3>
+<p>Cepaluni and Accorsi. "The Factor Endowments of Rebellion." Working paper, 2026.</p>
+
+<h3 class="mb-1">Book</h3>
+<p>2010. Vigevani and Cepaluni. <a href="https://www.google.com.br/books/edition/Brazilian_Foreign_Policy_in_Changing_Tim/A2AmOQpQPYcC" target="_blank" rel="noopener noreferrer">Brazilian Foreign Policy</a>.</p>
+
+<h3 class="mb-1">Book Chapters</h3>
+
+<p>2024. <a href="https://doi.org/10.4324/9781003489993" target="_blank" rel="noopener noreferrer">Populism and COVID</a>.</p>
+<p>2019. <a href="https://link.springer.com/chapter/10.1007/978-3-319-99552-6_4" target="_blank" rel="noopener noreferrer">Mercosur Strategy</a>.</p>
+<p>2013. <a href="https://tinyurl.com/4k8c5d2m" target="_blank" rel="noopener noreferrer">Brazil: Global Power</a>.</p>
+
+</div>
+</div>
+
+</div>
+</section>
+
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/resume.min.js"></script>
+
 </body>
 </html>
