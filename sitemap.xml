@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gcepaluni.github.io/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gcepaluni.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gcepaluni.github.io/pt/"/>
+  </url>
+  <url>
+    <loc>https://gcepaluni.github.io/pt/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gcepaluni.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gcepaluni.github.io/pt/"/>
+  </url>
+  <url>
+    <loc>https://gcepaluni.github.io/capitalism-and-development/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://gcepaluni.github.io/GabrielCepaluniCV.pdf</loc>
+  </url>
+</urlset>
