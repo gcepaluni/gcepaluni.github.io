@@ -4,8 +4,8 @@ Run from the repository root after adding or editing a language page:
     python _tools/sync_languages.py
 
 Each language page gets: hreflang alternates, og:locale alternates, the
-language items in the side menu, and the switcher above the name. The book
-page gets the menu items only. Bump CSS_VERSION when css/site.css changes so
+compact language block in the side menu, and the switcher above the name.
+The book page gets the menu block only. Bump CSS_VERSION when css/site.css changes so
 browsers drop their cached copy.
 """
 import re
@@ -13,7 +13,7 @@ from datetime import date
 from pathlib import Path
 
 SITE = "https://gcepaluni.github.io/"
-CSS_VERSION = "4"
+CSS_VERSION = "7"
 
 # (code, hreflang, og locale, label, path from site root)
 LANGS = [
@@ -22,6 +22,9 @@ LANGS = [
     ("es", "es", "es_ES", "Español", "es/"),
     ("fr", "fr", "fr_FR", "Français", "fr/"),
     ("de", "de", "de_DE", "Deutsch", "de/"),
+    ("ru", "ru", "ru_RU", "Русский", "ru/"),
+    ("ar", "ar", "ar_AR", "العربية", "ar/"),
+    ("ja", "ja", "ja_JP", "日本語", "ja/"),
     ("zh", "zh-Hans", "zh_CN", "中文", "zh/"),
 ]
 BOOK = "capitalism-and-development/"
@@ -41,11 +44,12 @@ def alternates():
     return "\n".join(lines) + "\n"
 
 
-def nav_items(page_path, current):
-    return "".join(
-        f'        <li class="nav-item"><a class="nav-link" href="{rel(page_path, p)}" hreflang="{h}" lang="{h}">{label}</a></li>\n'
+def nav_block(page_path, current):
+    links = "".join(
+        f'<a href="{rel(page_path, p)}" hreflang="{h}" lang="{h}">{label}</a>'
         for code, h, _, label, p in LANGS if code != current
     )
+    return f'        <li class="nav-item lang-nav">{links}</li>\n'
 
 
 def switcher(page_path, current):
@@ -62,10 +66,11 @@ def write(path, text):
 
 
 def sync_common(s, page_path, current):
-    # Menu: drop any existing language items, then add the full set before </ul>.
+    # Menu: drop any existing language items, then add one compact block before </ul>.
     s = re.sub(r'        <li class="nav-item"><a class="nav-link" href="[^"#]*" hreflang="[^"]+" lang="[^"]+">[^<]+</a></li>\n', "", s)
+    s = re.sub(r'        <li class="nav-item lang-nav">.*?</li>\n', "", s)
     s = s.replace("        <!-- LANG-NAV -->\n", "")
-    s = re.sub(r"(      </ul>\n    </div>\n  </nav>)", lambda m: nav_items(page_path, current) + m.group(1), s, count=1)
+    s = re.sub(r"(      </ul>\n    </div>\n  </nav>)", lambda m: nav_block(page_path, current) + m.group(1), s, count=1)
     s = re.sub(r'href="((?:\.\./)*)css/site\.css(?:\?v=\w+)?"', rf'href="\1css/site.css?v={CSS_VERSION}"', s)
     return s
 

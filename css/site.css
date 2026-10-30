@@ -118,3 +118,33 @@ section.resume-section h2:not(.h4) {
 @media (max-width: 767.98px) {
   section.resume-section h2:not(.h4) { font-size: 2rem; }
 }
+
+/* Compact language list at the bottom of the side menu. */
+#sideNav .lang-nav {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  text-align: center;
+}
+#sideNav .lang-nav a {
+  display: inline-block;
+  margin: 0 0.35rem;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+}
+#sideNav .lang-nav a:hover {
+  color: #fff;
+}
+
+/* Right-to-left pages (Arabic): the side menu keeps its place; only the content area flows RTL. */
+.container-fluid[dir="rtl"] {
+  text-align: right;
+}
+[dir="rtl"] .book-cover {
+  margin: 0 0 1.5rem 2rem;
+}
+[dir="rtl"] .social-icons a {
+  margin-right: 0;
+  margin-left: 1rem;
+}
