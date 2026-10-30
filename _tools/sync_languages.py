@@ -21,6 +21,7 @@ LANGS = [
     ("pt", "pt-BR", "pt_BR", "Português", "pt/"),
     ("es", "es", "es_ES", "Español", "es/"),
     ("fr", "fr", "fr_FR", "Français", "fr/"),
+    ("de", "de", "de_DE", "Deutsch", "de/"),
     ("zh", "zh-Hans", "zh_CN", "中文", "zh/"),
 ]
 BOOK = "capitalism-and-development/"
